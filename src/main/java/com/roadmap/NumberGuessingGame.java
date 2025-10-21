@@ -12,7 +12,7 @@ public class NumberGuessingGame {
     System.out.println("Bem-vindo ao jogo de adivinhação!");
 
     while (continueGame) {
-      System.out.println("Eu estou pensando em um número entre 1 e 100." +
+      System.out.println("\n\nEu estou pensando em um número entre 1 e 100." +
           "\n" +
           "Escolha um nível de dificuldade: fácil (10 tentativas), médio (7 tentativas), difícil (5 tentativas)" +
           "\n" +
@@ -39,10 +39,14 @@ public class NumberGuessingGame {
         }
       }
 
+      sc.nextLine();
+      System.out.print("Deseja continuar? (y/n): ");
+      String mustContinue = sc.nextLine();
 
-      continueGame = false;
+      if (!mustContinue.equalsIgnoreCase("y")) {
+        continueGame = false;
+      }
     }
-
   }
 
   private static int generateSecretNumber() {
