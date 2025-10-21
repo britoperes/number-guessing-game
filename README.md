@@ -34,7 +34,7 @@ Este projeto foi desenvolvido como parte dos desafios propostos em [roadmap.sh/p
 
 ```bash
 # Clone o repositório
-git clone <url-do-repositorio>
+git clone git@github.com:britoperes/number-guessing-game.git
 
 # Navegue até o diretório do projeto
 cd number-guessing-game
